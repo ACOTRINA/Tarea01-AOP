@@ -87,4 +87,4 @@ public class Main extends Application {
         if(color=="Amarillo") rect.setFill(Color.YELLOW);
         else if(color=="Azul") rect.setFill(Color.BLUE);
         else rect.setFill(Color.RED);
-    }
+    }}
