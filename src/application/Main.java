@@ -35,6 +35,30 @@ public class Main extends Application {
         btn2.setStyle("-fx-background-color: pink;-fx-font-size: 1.5em;-fx-font-weight:bolder; -fx-font: bold italic 15pt \"Lucida Console\"");
         btn3.setStyle("-fx-background-color: pink;-fx-font-size: 1.5em;-fx-font-weight:bolder; -fx-font: bold italic 15pt \"Lucida Console\"");
 
+        btn1.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                String color = btn1.getText();
+                System.out.println(color);
+            }			
+        });
+        
+        btn2.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+            	String color = btn2.getText();
+            	System.out.println(color);
+            }
+        });
+        
+        btn3.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+            	String color = btn3.getText();
+            	System.out.println(color);
+            }
+        });
+
         rect = new Rectangle(300,250,300,250);
         rect.setFill(Color.TRANSPARENT);
         
