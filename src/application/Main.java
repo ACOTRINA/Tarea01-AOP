@@ -31,6 +31,10 @@ public class Main extends Application {
         btn2.setText("Azul");
         btn3.setText("Rojo");
 
+        btn1.setStyle("-fx-background-color: pink;-fx-font-size: 1.5em;-fx-font-weight:bolder; -fx-font: bold italic 15pt \"Lucida Console\"");
+        btn2.setStyle("-fx-background-color: pink;-fx-font-size: 1.5em;-fx-font-weight:bolder; -fx-font: bold italic 15pt \"Lucida Console\"");
+        btn3.setStyle("-fx-background-color: pink;-fx-font-size: 1.5em;-fx-font-weight:bolder; -fx-font: bold italic 15pt \"Lucida Console\"");
+
         rect = new Rectangle(300,250,300,250);
         rect.setFill(Color.TRANSPARENT);
         
