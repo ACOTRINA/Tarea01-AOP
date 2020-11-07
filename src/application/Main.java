@@ -39,7 +39,7 @@ public class Main extends Application {
             @Override
             public void handle(ActionEvent event) {
                 String color = btn1.getText();
-                System.out.println(color);
+            	cambiarColor(color);
             }			
         });
         
@@ -47,7 +47,7 @@ public class Main extends Application {
             @Override
             public void handle(ActionEvent event) {
             	String color = btn2.getText();
-            	System.out.println(color);
+            	cambiarColor(color);
             }
         });
         
@@ -55,7 +55,7 @@ public class Main extends Application {
             @Override
             public void handle(ActionEvent event) {
             	String color = btn3.getText();
-            	System.out.println(color);
+            	cambiarColor(color);
             }
         });
 
@@ -75,13 +75,16 @@ public class Main extends Application {
         
         primaryStage.setTitle("TAREA01-AOP");
         primaryStage.setScene(scene);
-        primaryStage.show();
-        
+        primaryStage.show();        
     }
 
     public static void main(String[] args) {
         launch(args);
     }
     
-}
-
+    private void cambiarColor(String color) {
+        System.out.println(color);
+        if(color=="Amarillo") rect.setFill(Color.YELLOW);
+        else if(color=="Azul") rect.setFill(Color.BLUE);
+        else rect.setFill(Color.RED);
+    }
