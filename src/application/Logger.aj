@@ -1,15 +1,11 @@
 package application;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-
 
 public aspect Logger {
 	
-	
+	pointcut successA() : call(* cambiarColor*(..) );
+    after() : successA() { 
+    	System.out.println("**** Color cambiado ****");    	
+    }
+
     
 }
-
