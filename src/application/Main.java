@@ -96,7 +96,7 @@ public class Main extends Application {
         
         Scene scene = new Scene(root1,300,250);
         
-        primaryStage.setTitle("TAREA01-AOP");
+        primaryStage.setTitle("TARE A01-AOP");
         primaryStage.setScene(scene);
         primaryStage.show();
         
